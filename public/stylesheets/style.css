@@ -1,0 +1,375 @@
+html {
+  font-family:'Lucida Grande', 'Segoe UI', Tahoma, sans-serif;
+	background-color:#EEE;
+	color:#333;
+}
+
+/* .class */
+/* #id */
+
+/*---- any list, any list item-----*/
+ul, ul li {
+  list-style-type:circle;
+  list-style-position:inside;
+}
+/*---- any list-----*/
+ul li {
+  padding-left:15px;
+}
+
+/*---- style for any list item, ie: spar clean text---*/
+.description ul, .description ul li{
+	margin-left:9px;
+	margin-bottom:2px;
+	font-size:11px;
+	list-style-position:outside;
+	padding-left:4px;
+	line-height:13px;
+}
+
+/*--- for bulleted list---*/
+.description ul{
+	margin-bottom:6px;
+}
+
+/*--- prev next buttons ---*/
+.description h3 {
+	margin-top:6px;
+}
+
+/*--- capitalized main title after the project name ---*/
+.description h4{
+	text-transform:uppercase;
+	font-size:11px;
+	font-weight:normal;
+	margin-top:8px;
+	margin-bottom:5px;
+}
+
+/*--- capitalized "Skills Applied" ---*/
+.description h6{
+	text-transform:uppercase;
+	font-size:11px;
+	font-weight:normal;
+	margin-top:20px;
+	margin-bottom:0px;
+}
+
+
+/*--- capitalized "Skills Applied" ---*/
+.description h7{
+	font-size:11px;
+	font-weight:italic;
+	margin-top:10px;
+	margin-bottom:0px;
+}
+
+
+/*--- lower case bolded sub title after the project name ---*/
+.description h5{
+	font-size:11px;
+	margin-top:3px;
+	margin-bottom:2px;
+}
+
+/*line for date & team members of project description*/
+span.date{
+  display:block;
+  margin-bottom:3px;
+}
+
+/*----- name logo -----*/
+h1 {
+  position:relative;
+  right:25px;
+}
+
+/*-----thumbnails-----*/
+
+.grid_11.thumbnails {
+	width:880px;
+	margin:0px;
+	margin-left:4px;
+}
+
+.thumbnails .thumbnail {
+	width:280px;
+	height:105px;
+	float:left;
+	margin:5px;
+	position:relative;
+}
+
+/*---text in thumbnails---*/
+		.thumbnail h3 {
+			font-family:'Lucida Grande', 'Segoe UI', Tahoma, sans-serif;
+			color:#FFF;
+			font-size:13px;  /*--- this font size is changing---*/
+			font-style:normal;
+			margin:0px;
+			padding:12px;
+			padding-bottom:1px;
+		}
+		.thumbnail p {
+			color:#FFF;
+			margin:0px;
+			padding:0px 12px;   /*tb rl*/
+		}
+
+		.thumbnail a {
+			position:relative;
+			z-index:0;
+		}
+
+		.thumbnail .overlay {
+			color:#999;
+			width:100%;
+			height:50%;
+			position:absolute;
+			left:0px;
+			top:0px;
+			background-color:rgba(0,0,0,.30);
+			z-index:1;
+		}
+		
+		.thumbnail:hover .overlay {
+			display:none;
+		}
+
+		.thumbnail.disabled:hover .overlay {
+		  display:block;
+		}
+/*resume*/
+.matte h6{
+  	text-transform:uppercase;
+  	font-size:12px;   
+  	font-style:bold; 
+    margin-top:12px;
+    margin-bottom:6px;
+}                
+
+
+/*--- text for body in resume ---*/
+.grid_5 {
+  font-size:9px;
+}
+
+.grid_3 {
+  font-size:9px;
+}
+
+.matte ul li{
+    list-style-type:none;
+    padding:0px;
+    font-size:11px;   
+    margin-bottom:4px;
+}
+/*----- "work" -----*/
+h2 {
+  text-transform:lowercase; /*lowercase, uppercase, capitalize */
+  font-weight:normal;
+  color:#29C5CF;
+  margin-bottom:12px;
+  margin-bottom:2ex; /*--- height of the character 2x's the height of 1 lower case "x"---*/
+  font-size:14px;
+}
+
+/*----- any link anywhere -----*/
+a {
+  color:#000;
+  text-decoration:none;
+}
+
+a:hover, a.selected{
+  color:#29C5CF;
+}
+
+.half{
+  width:50%;
+  float:left;
+}
+.right{
+  text-align:right;
+}
+
+/*--- line unnder top right nav bar---*/
+#header{
+	border-bottom:1px solid #BCBCBC;
+	margin-bottom:13px;
+}
+
+/*---work navigation---*/
+#work_nav ul li {
+  list-style-type:none;
+  font-size:11px;
+  margin:5px 0px;
+  padding:0px;
+}
+
+#navigation{
+	float:right;
+	margin-bottom:12px; /*bottom of the block*/
+}
+#navigation li{
+  padding:0px;
+  font-size:11px;
+  margin-left:2em;
+	display:inline; /*stack next to each other*/
+}
+
+#navigation li a {
+  text-transform:lowercase;
+  text-decoration:none;
+}
+
+.project_images{
+  margin-top:0px;
+  width:620px;
+  overflow:hidden;
+}
+
+h3 {
+  font-family:'Georgia', 'serif'; font-style: italic;
+  font-size:18px;
+  color:#29C5CF;
+  font-weight:normal;
+  margin:12px 0px 4px 0px;
+}
+
+/*--- all paragraphs ---*/
+
+/*---space above prev & next---*/
+p {
+  font-size:11px;
+  margin:2px 0px 6px 0px;
+  line-height: 15px;
+  }
+
+/*--- white box in contact pg---*/
+.matte{
+  background-color:#FFFFFF;
+  float:right;
+  margin-right:10px;
+}
+
+#resume {
+  padding:30px;
+}
+
+#resume_download a{
+  font-weight:bold;
+  font-size:11px;
+  padding:3px 4px;     
+  color:#AAA;
+}
+#resume_download {
+  margin-bottom:6px;
+  
+}
+
+/*--- for contact pg start of body text---*/
+.padded {
+  padding:27px;
+}
+
+.scroller{
+  display:inline-block;
+  width:10000px;
+}
+.scroller img, .scroller .video {
+  float:left;
+  width:620px;
+overflow:hidden;
+}
+
+.scroller .video p {
+  font-size:10px;
+  color:#666;
+}
+.scroller .video p a {
+  text-decoration:none;
+}
+
+.controls a.disabled {
+  color:#AAA;
+}
+
+.controls .half.right {
+  color:#000;
+}
+
+/*---line under prev & next buttons ---*/
+.controls{
+  clear:both;
+  margin:2px 0px;
+  border-bottom:1px solid #BCBCBC;
+  padding:0px;
+  letter-spacing:1px;
+  color:#AAA;
+
+}
+
+/*--- prev & next button sizes---*/
+.controls p {
+	font-size:9px; 
+}
+.controls a /*-- a = link--*/ {
+  text-transform:uppercase;
+  color:#000;
+}
+
+.controls a:hover{
+	color:#29C5CF;
+}
+
+.controls a.disabled:hover{
+	color:#AAA;
+}
+
+/*---text for "download resume" ----*/
+#download_resume_text{
+  font-size:12px;
+  color:#404040;
+}
+
+#download_resume_text:hover{
+  color:#29C5CF;
+}
+
+/*---text for "download images" ----*/
+#download_images_text{
+  font-size:10px;
+  color:#404040;
+}
+
+#download_images_text:hover{
+  color:#29C5CF;
+}
+
+#download_images a{
+    font-weight:bold;
+    font-size:11px;   
+    color:#AAA;
+  }
+
+
+/*---text for email link on contact pg ----*/
+#email_link{
+	font-size:12px;
+	color:#404040;	
+}
+
+#email_link:hover{
+  color:#29C5CF;
+}
+
+
+/*---
+NOTES:
+&nbsp; non breaking space
+shift apple T = find something in a file 
+apple T = find a file
+shift apple c = color
+don&rsquo;t
+&rsquo;
+---*/

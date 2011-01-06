@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>A. Youna Yang</title>
+  <link rel="stylesheet" href="/stylesheets/reset.css">
+  <link rel="stylesheet" href="/stylesheets/grid.css">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <script type="text/javascript" charset="utf-8">
+    var current_url = '<%=request.path_info%>'
+  </script>
+  <script src="/javascripts/protoaculous.1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/javascripts/app.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body>
+	
+  <div class="container_11">
+     
+    <div class="grid_11" id="header">
+      <h1><a href="/">
+        <img src="/images/name-logo2.png" alt="A. Youna Yang"/>  <!-- alternative representation-->
+			</a>
+      </h1>
+      
+      <ul id="navigation">
+        <% if (request.path_info[0,5] == "/work")%>
+          <li><a href="/work/pivotal" class="selected">Work</a></li>
+        <%else%>  
+          <li><a href="/work/pivotal">Work</a></li>
+        <%end%>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/resume">Resume</a></li>
+      </ul>
+      
+    </div>
+                                                 
+		<%=yield%>
+	</div>
+	
+</body>
+</html>
