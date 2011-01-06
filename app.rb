@@ -1,6 +1,8 @@
-require 'sinatra/base'
-require 'padrino-helpers'
-set :environment, :development
+require 'sinatra'
+
+configure :production do
+  set :port, 80
+end
 
 before do
   if request.host.start_with? "www"
@@ -22,10 +24,14 @@ end
 
 get "/work/:name" do 
   @project = "projects/_#{params[:name]}".to_sym
-  erb :project
+  erb(:project) rescue pass
 end
 
-#error do
-#  redirect '/'
-#end
+not_found do
+  erb :notfound, :layout => :layout
+end
+
+error do
+  erb :error, :layout => :layout
+end
 
