@@ -35,3 +35,6 @@ error do
   erb :error, :layout => :layout
 end
 
+get '/about' do
+  "Nothing"
+end
